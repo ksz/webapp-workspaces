@@ -1,0 +1,30 @@
+# Grunt Modules
+node_modules
+
+# Bower Modules
+app/webroot/bower_components
+
+# Composer Modules
+Vendor
+
+# CakePHP Plugins
+Plugin
+
+# User specific & automatically generated files
+app/tmp/*
+
+# Database Settings
+app/Config/database.php
+
+# Debug mode
+app/Config/env.php
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

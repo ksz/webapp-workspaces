@@ -1,0 +1,446 @@
+2014-02-22 20:35:23 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Users/maccotsan/Dev/yo-cakephp/test/app//Vendor/autoload.php' (include_path='.:') in [/Users/maccotsan/Dev/yo-cakephp/test/app/Config/bootstrap.php, line 17]
+2014-02-22 20:35:23 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Users/maccotsan/Dev/yo-cakephp/test/app//Vendor/autoload.php' (include_path='.:')
+Stack Trace:
+#0 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require() [<a h...', '/Users/maccotsa...', 17)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', '/Users/maccotsa...', 17, Array)
+#2 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', '/Users/maccotsa...', 17, Array)
+#3 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-22 20:35:39 Error: Fatal Error (64): require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Vendor/autoload.php' (include_path='.:') in [/Users/maccotsan/Dev/yo-cakephp/test/app/Config/bootstrap.php, line 17]
+2014-02-22 20:35:39 Error: [FatalErrorException] require() [<a href='http://php.net/function.require'>function.require</a>]: Failed opening required '/Vendor/autoload.php' (include_path='.:')
+Stack Trace:
+#0 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'require() [<a h...', '/Users/maccotsa...', 17)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [<a h...', '/Users/maccotsa...', 17, Array)
+#2 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 64, 'require() [<a h...', '/Users/maccotsa...', 17, Array)
+#3 /Users/maccotsan/Dev/yo-cakephp/test/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 21:23:29 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:24:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/app/Controller/AppController.php(14): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#2 [internal function]: App::load('AppController')
+#3 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#4 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#5 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#6 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#7 [internal function]: spl_autoload_call('PagesController')
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#11 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-25 21:36:36 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/vagrant/app/Config/bootstrap.php, line 28]
+2014-02-25 21:36:36 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/vagrant/app/Co...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/vagrant/app/Co...', 28, Array)
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/vagrant/app/Co...', 28, Array)
+#3 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-02-25 21:36:52 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:36:58 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:39:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:39:54 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /vagrant/app/Config/bootstrap.php(25): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/Configure.php(92): include('/vagrant/app/Co...')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#3 /vagrant/app/webroot/index.php(85): include('/vagrant/Vendor...')
+#4 {main}
+2014-02-25 21:39:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /vagrant/app/Config/bootstrap.php(25): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/Configure.php(92): include('/vagrant/app/Co...')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#3 /vagrant/app/webroot/index.php(85): include('/vagrant/Vendor...')
+#4 {main}
+2014-02-25 21:40:06 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /vagrant/app/Config/bootstrap.php(25): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/Configure.php(92): include('/vagrant/app/Co...')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#3 /vagrant/app/webroot/index.php(85): include('/vagrant/Vendor...')
+#4 {main}
+2014-02-25 21:40:09 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /vagrant/app/Config/bootstrap.php(25): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/Configure.php(92): include('/vagrant/app/Co...')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/bootstrap.php(175): Configure::bootstrap(true)
+#3 /vagrant/app/webroot/index.php(85): include('/vagrant/Vendor...')
+#4 {main}
+2014-02-25 21:40:29 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:40:35 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:49:53 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:50:31 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 21:53:40 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:01:26 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/app/Controller/AppController.php(14): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#3 [internal function]: App::load('AppController')
+#4 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#5 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#6 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#8 [internal function]: spl_autoload_call('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#11 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#12 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-25 22:01:31 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/app/Controller/AppController.php(14): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#3 [internal function]: App::load('AppController')
+#4 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#5 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#6 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#8 [internal function]: spl_autoload_call('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#11 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#12 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-25 22:01:42 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/app/Controller/AppController.php(14): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#3 [internal function]: App::load('AppController')
+#4 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#5 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#6 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#8 [internal function]: spl_autoload_call('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#11 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#12 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-02-25 22:03:07 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:03:17 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:03:53 Error: [MissingPluginException] Plugin  could not be found.
+Exception Attributes: array (
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/app/Controller/AppController.php(14): CakePlugin::path()
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#2 [internal function]: App::load('AppController')
+#3 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#4 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#5 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#6 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#7 [internal function]: spl_autoload_call('PagesController')
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#11 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-25 22:04:28 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/app/Controller/AppController.php(14): CakePlugin::load('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(545): include('/vagrant/app/Co...')
+#2 [internal function]: App::load('AppController')
+#3 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Console/Templates/skel/Controller/PagesController.php(22): spl_autoload_call('AppController')
+#4 /vagrant/Vendor/composer/ClassLoader.php(363): include('/vagrant/Vendor...')
+#5 /vagrant/Vendor/composer/ClassLoader.php(269): Composer\Autoload\includeFile('/vagrant/Vendor...')
+#6 [internal function]: Composer\Autoload\ClassLoader->loadClass('PagesController')
+#7 [internal function]: spl_autoload_call('PagesController')
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(258): class_exists('PagesController')
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(227): Dispatcher->_loadController(Object(CakeRequest))
+#10 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(151): Dispatcher->_getController(Object(CakeRequest), Object(CakeResponse))
+#11 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-02-25 22:08:59 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:09:05 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:09:29 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /
+Stack Trace:
+#0 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(365): CakePlugin::path('DebugKit')
+#1 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(226): App::pluginPath('DebugKit')
+#2 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#8 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(181): Controller->constructClasses()
+#9 /vagrant/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#10 /vagrant/app/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-02-25 22:47:54 Error: Fatal Error (4): syntax error, unexpected T_STRING in [/vagrant_data/app/Controller/AppController.php, line 13]
+2014-02-25 22:47:54 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /
+Stack Trace:
+#0 /vagrant_data/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/vagrant_data/a...', 13)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/vagrant_data/a...', 13, Array)
+#2 /vagrant_data/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(930): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/vagrant_data/a...', 13, Array)
+#3 /vagrant_data/Vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(903): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
