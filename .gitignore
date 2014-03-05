@@ -19,6 +19,9 @@ app/Config/database.php
 # Debug mode
 app/Config/env.php
 
+# VM
+.vagrant
+
 # OS generated files
 .DS_Store
 .DS_Store?
